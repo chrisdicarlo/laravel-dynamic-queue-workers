@@ -2,12 +2,13 @@
 
 namespace ChrisDiCarlo\LaravelDynamicQueueWorkers\Concerns;
 
-use function Laravel\Prompts\text;
 use Illuminate\Process\Pool;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Queue;
+
 use function Laravel\Prompts\info;
 use function Laravel\Prompts\spin;
+use function Laravel\Prompts\text;
 
 trait HasDynamicWorkers
 {
@@ -20,22 +21,23 @@ trait HasDynamicWorkers
         $this->workerCount = text(
             label: "How many workers would you like to use? (Max: {$maxWorkers})",
             default: $this->option('workers'),
-            hint: "The number of workers must be less than 85% of the available CPU cores",
+            hint: 'The number of workers must be less than 85% of the available CPU cores',
             validate: fn (string $value) => match (true) {
                 ! is_numeric($value) => 'The count must be numeric',
                 $value < 1 => 'The count must be greater than 0',
-                $value > $maxWorkers => "Number of workers cannot exceed 85% of the available CPU cores",
+                $value > $maxWorkers => 'Number of workers cannot exceed 85% of the available CPU cores',
                 default => null
             }
         );
     }
 
-    private function runWorkers(?string $queue = 'default', ?string $driver = 'database'): void {
+    private function runWorkers(?string $queue = 'default', ?string $driver = 'database'): void
+    {
         $initialQueueSize = $currentQueueSize = Queue::connection($driver)->size($queue);
 
         $pool = spin(
             message: 'Starting queue workers...',
-            callback: function () use ($driver, $queue){
+            callback: function () use ($driver, $queue) {
                 sleep(2);
 
                 return Process::pool(function (Pool $pool) use ($driver, $queue) {

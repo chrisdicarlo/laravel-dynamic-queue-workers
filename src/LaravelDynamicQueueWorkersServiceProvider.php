@@ -2,7 +2,6 @@
 
 namespace ChrisDiCarlo\LaravelDynamicQueueWorkers;
 
-use ChrisDiCarlo\LaravelDynamicQueueWorkers\Commands\LaravelDynamicQueueWorkersCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

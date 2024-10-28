@@ -2,7 +2,6 @@
 
 namespace ChrisDiCarlo\LaravelDynamicQueueWorkers\Concerns;
 
-use function Laravel\Prompts\text;
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\warning;
 
