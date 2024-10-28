@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace ChrisDiCarlo\LaravelDynamicQueueWorkers\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelDynamicQueueWorkersCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-dynamic-queue-workers';
 
     public $description = 'My command';
 
