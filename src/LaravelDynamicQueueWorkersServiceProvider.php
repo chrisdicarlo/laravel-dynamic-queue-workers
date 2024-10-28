@@ -2,9 +2,9 @@
 
 namespace ChrisDiCarlo\LaravelDynamicQueueWorkers;
 
+use ChrisDiCarlo\LaravelDynamicQueueWorkers\Commands\LaravelDynamicQueueWorkersCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use ChrisDiCarlo\LaravelDynamicQueueWorkers\Commands\LaravelDynamicQueueWorkersCommand;
 
 class LaravelDynamicQueueWorkersServiceProvider extends PackageServiceProvider
 {

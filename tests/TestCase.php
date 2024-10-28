@@ -2,9 +2,9 @@
 
 namespace ChrisDiCarlo\LaravelDynamicQueueWorkers\Tests;
 
+use ChrisDiCarlo\LaravelDynamicQueueWorkers\LaravelDynamicQueueWorkersServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use ChrisDiCarlo\LaravelDynamicQueueWorkers\LaravelDynamicQueueWorkersServiceProvider;
 
 class TestCase extends Orchestra
 {
