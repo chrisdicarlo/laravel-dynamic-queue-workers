@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/chrisdicarlo/laravel-dynamic-queue-workers/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/chrisdicarlo/laravel-dynamic-queue-workers/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/chrisdicarlo/laravel-dynamic-queue-workers.svg?style=flat-square)](https://packagist.org/packages/chrisdicarlo/laravel-dynamic-queue-workers)
 
-This package offers three traits for use with Artisan commands for flexible queue and worker handling in Laravel applications.  It allows runtime configuration of the queue, queue driver, and the number of workers to start dynamically.
+This package offers three traits for use with Artisan commands for flexible queue and worker handling in Laravel applications.  It allows runtime configuration of the queue, queue driver, and the number of workers to dynamically start.
 
 * Dynamic Queue Selection: Choose the queue name
 * Dynamic Queue Driver: Change queue driver
