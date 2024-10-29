@@ -10,6 +10,9 @@ This package offers three traits for use with Artisan commands for flexible queu
 * Dynamic Queue Selection: Choose the queue name
 * Dynamic Queue Driver: Change queue driver
 * Variable Queue Workers: Start/stop workers a specified number of queue workers
+ 
+> [!WARNING]
+> This package is currently pre-alpha and is subject to change without notice.  Use at your own risk!   _**Dragons be here!**_
 
 ## Support me
 
