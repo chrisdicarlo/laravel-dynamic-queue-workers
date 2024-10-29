@@ -25,11 +25,6 @@ composer require chrisdicarlo/laravel-dynamic-queue-workers
 
 ## Usage
 
-```php
-$laravelDynamicQueueWorkers = new ChrisDiCarlo\LaravelDynamicQueueWorkers();
-echo $laravelDynamicQueueWorkers->echoPhrase('Hello, ChrisDiCarlo!');
-```
-
 ## Testing
 
 ```bash
